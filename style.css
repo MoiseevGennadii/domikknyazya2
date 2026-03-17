@@ -833,3 +833,24 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+header {
+    background: linear-gradient(rgba(42, 92, 74, 0.7), rgba(42, 92, 74, 0.7)),
+                url('img/7.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
