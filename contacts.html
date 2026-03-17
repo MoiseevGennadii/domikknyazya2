@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
     <title>Домик Князя - Контакты | Как добраться и связаться</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -26,45 +28,88 @@
         <h2>Как с нами связаться</h2>
 
         <section class="contact-info">
+
+            <!-- Дополнительный телефон -->
             <div class="contact-item">
-                <h3>📞 Телефон / Viber</h3>
-                <p><a href="tel:+375298990408">+375 (29) 899-04-08</a> (нажмите, чтобы позвонить)</p>
+                <h3><i class="fa-solid fa-phone"></i> Елена</h3>
+                <p><a href="tel:+375298990408">+375 (29) 899-04-08</a></p>
+                <p class="contact-note">нажмите, чтобы позвонить</p>
             </div>
 
+            <!-- Телефон Валентина -->
             <div class="contact-item">
-                <h3>📍 Адрес</h3>
+                <h3><i class="fa-solid fa-phone"></i> Валентин</h3>
+                <p><a href="tel:+375333668202">+375 (33) 366-82-02</a></p>
+                <p class="contact-note">нажмите, чтобы позвонить</p>
+            </div>
+
+            <!-- Viber -->
+            <!-- <div class="contact-item">
+                <h3><i class="fa-brands fa-viber"></i> Viber</h3>
+                <p><a href="viber://chat?number=%2B375298990408">+375 (29) 899-04-08</a></p>
+                <p class="contact-note">нажмите, чтобы открыть Viber</p>
+            </div> -->
+
+            <!-- Адрес -->
+            <div class="contact-item">
+                <h3><i class="fa-solid fa-location-dot"></i> Адрес</h3>
                 <p>Беларусь, Витебская область, Миорский район, Новопогостский сельсовет, деревня Снеги, 21.</p>
             </div>
 
-            <div class="contact-item">
-                <h3>🌐 Мы в соцсетях</h3>
-                <p>
-                    <a href="#" target="_blank">ВКонтакте</a> |
-                    <a href="#" target="_blank">Instagram</a>
-                    <!-- Замените # на ссылки на ваши страницы -->
-                </p>
-            </div>
         </section>
 
+        <!-- Социальные сети -->
+        <section class="social-section">
+            <h2>Мы в соцсетях и мессенджерах</h2>
+
+            <div class="social-grid">
+
+                <a href="https://vk.com/your_page" target="_blank" class="social-button vk">
+                    <span class="social-icon"><i class="fa-brands fa-vk"></i></span>
+                    <span class="social-name">ВКонтакте</span>
+                </a>
+
+                <a href="instagram://user?username=domik_knyazya target=" _blank" class="social-button instagram">
+                    <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="social-name">Instagram</span>
+                </a>
+
+                <a href="https://wa.me/375298990408" target="_blank" class="social-button whatsapp">
+                    <span class="social-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                    <span class="social-name">WhatsApp</span>
+                </a>
+
+                <a href="https://t.me/Lena_moi" target="_blank" class="social-button telegram">
+                    <span class="social-icon"><i class="fa-brands fa-telegram"></i></span>
+                    <span class="social-name">Telegram</span>
+                </a>
+
+                <a href="viber://chat?number=%2B375298990408" target="_blank" class="social-button viber">
+                    <span class="social-icon"><i class="fa-brands fa-viber"></i></span>
+                    <span class="social-name">Viber</span>
+                </a>
+
+            </div>
+
+            <p class="social-note">* Нажмите на кнопку, чтобы открыть приложение на телефоне</p>
+        </section>
+
+        <!-- Карта -->
         <section class="map-section">
             <h2>Карта и построение маршрута</h2>
-            
-            <!-- Компактная круглая кнопка над картой -->
+
             <div class="map-button-container">
-                <a href="https://yandex.by/maps/?pt=27.356925,55.574971&z=16&l=map&rtext=~55.574971,27.356925&rtt=auto" 
-                   target="_blank" 
-                   class="map-round-button">
+                <a href="https://yandex.by/maps/?pt=27.356925,55.574971&z=16&l=map&rtext=~55.574971,27.356925&rtt=auto"
+                    target="_blank" class="map-round-button">
                     <span class="button-icon">🗺️</span>
                     <span class="button-text">Открыть карту и проложить маршрут</span>
                     <span class="button-arrow">→</span>
                 </a>
             </div>
 
-            <!-- Встроенная карта (iframe) для предпросмотра -->
             <iframe
                 src="https://yandex.by/map-widget/v1/?ll=27.356925%2C55.574971&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjU2OTc3NBJG0JLRg9GB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQnNC40L7RgNGB0LrQuNC5INGA0LDQudC-0L0sINC00LXRgNC10LLQvdGPINCh0L3QtdCz0LgsIDIxIgoNCPbJRBVCjW5kQg%2C%2C&z=16.17"
-                frameborder="0" 
-                allowfullscreen="true"
+                frameborder="0" allowfullscreen="true"
                 style="width: 100%; height: 400px; border: 1px solid #ccc; border-radius: 8px;"></iframe>
 
         </section>
