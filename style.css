@@ -1,0 +1,331 @@
+/* style.css - Основные стили для всего сайта */
+
+/* Общие сбросы и базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f2; /* Светлый, "природный" фон */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Шапка */
+header {
+    background: #2a5c4a; /* Темно-зеленый, цвет леса */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Навигация (адаптивная) */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #3e4d44; /* Темно-серо-зеленый */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #5b8c7a;
+    transform: scale(1.05);
+}
+
+/* Типографика */
+h2 {
+    color: #2a5c4a;
+    margin: 1.5rem 0 1rem 0;
+    border-bottom: 2px solid #d4b68a; /* Бежевый, как дерево */
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #3e4d44;
+    margin: 1rem 0;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Секции на главной */
+.hero {
+    background-color: #e8f0e7;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.activities {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.cta {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #d4b68a;
+    border-radius: 12px;
+    color: #2a5c4a;
+    font-size: 1.2rem;
+}
+
+.cta a {
+    color: #2a5c4a;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed #2a5c4a;
+}
+
+/* Страница "О нас" */
+.about-description, .advantages, .price {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.price table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.price td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.price tr:last-child td {
+    border-bottom: none;
+}
+
+.price td:last-child {
+    font-weight: bold;
+    color: #2a5c4a;
+    text-align: right;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Галерея */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    aspect-ratio: 4/3; /* Делает все фото одного пропорционального размера */
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезает фото, чтобы заполнить контейнер */
+    display: block;
+    cursor: pointer;
+}
+
+/* Отзывы */
+.reviews-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.reviews-container iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Контакты */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.contact-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.contact-item a {
+    color: #2a5c4a;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Карта на странице контактов */
+.map-section {
+    margin: 30px 0;
+}
+
+.map-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.map-placeholder {
+    background-color: #e0e0e0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 2px dashed #2a5c4a;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%232a5c4a" opacity="0.2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 80px;
+    color: #2a5c4a;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.map-placeholder:hover {
+    background-color: #d0d0d0;
+}
+
+.map-placeholder p {
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+/* Подвал */
+footer {
+    background-color: #2a3c33;
+    color: #ddd;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #d4b68a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность для маленьких экранов (смартфоны) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr; /* По одной картинке в ряд на телефоне */
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .price td {
+        display: block;
+        text-align: left !important;
+        padding: 8px;
+    }
+
+    .price td:last-child {
+        padding-top: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .reviews-container iframe {
+        height: 400px; /* Немного уменьшаем высоту на телефоне */
+    }
+}
