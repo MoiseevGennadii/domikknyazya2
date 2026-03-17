@@ -334,51 +334,38 @@ footer a:hover {
 .map-button-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 15px 0;
 }
 
 .map-round-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #2a5c4a;
+    background: linear-gradient(145deg, #2a5c4a, #1e4537);
     color: white;
-    padding: 15px 25px;
-    border-radius: 50px; /* Делает кнопку овальной/круглой */
+    padding: 12px 20px;  /* Уменьшил отступы */
+    border-radius: 40px;  /* Чуть меньше скругление */
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;      /* Уменьшил размер шрифта */
     box-shadow: 0 4px 12px rgba(42, 92, 74, 0.3);
     transition: all 0.3s ease;
     border: 2px solid #d4b68a;
-    max-width: 100%;
-}
-
-.map-round-button:hover {
-    background-color: #1e4537;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(42, 92, 74, 0.4);
-}
-
-.map-round-button:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(42, 92, 74, 0.3);
+    max-width: 90%;       /* Ограничил максимальную ширину */
+    gap: 8px;
 }
 
 .button-icon {
-    font-size: 1.4rem;
-    margin-right: 10px;
+    font-size: 1.2rem;    /* Уменьшил иконку */
 }
 
 .button-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;   /* Разрешил перенос текста */
+    text-align: center;
 }
 
 .button-arrow {
-    margin-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;    /* Уменьшил стрелку */
     transition: transform 0.3s ease;
 }
 
@@ -386,34 +373,31 @@ footer a:hover {
     transform: translateX(5px);
 }
 
-/* Адаптация для мобильных устройств */
+/* Специальные стили для мобильных устройств */
 @media (max-width: 600px) {
     .map-round-button {
-        padding: 12px 20px;
-        font-size: 1rem;
-        width: 100%;
-        justify-content: center;
+        padding: 10px 15px;     /* Еще меньше отступы на телефоне */
+        font-size: 0.9rem;       /* Еще меньше шрифт */
+        width: auto;             /* Автоширина */
+        min-width: 250px;        /* Минимальная ширина */
+        max-width: 95%;          /* Максимальная ширина */
     }
     
-    .button-text {
-        white-space: normal;
-        text-align: center;
+    .button-icon {
+        font-size: 1.1rem;
+    }
+    
+    .button-arrow {
+        font-size: 1rem;
     }
 }
 
 /* Для очень маленьких экранов */
 @media (max-width: 380px) {
     .map-round-button {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    
-    .button-icon {
-        margin-right: 5px;
-    }
-    
-    .button-arrow {
-        margin-left: 5px;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        min-width: 200px;
     }
 }
 
