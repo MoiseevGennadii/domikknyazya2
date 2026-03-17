@@ -854,3 +854,24 @@ header p {
     font-size: 1.2rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
+
+/* Более красивый вариант с подчеркиванием */
+main h2 {
+    text-align: center;
+    margin: 40px auto 30px;
+    color: #2a5c4a;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+main h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #d4b68a;
+}
