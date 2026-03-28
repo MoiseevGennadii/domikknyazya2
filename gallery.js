@@ -7,7 +7,14 @@ const photos = [
     { src: "img/осень.jpeg", alt: "Лесные тропы" },
     { src: "img/рыбалка.jpg", alt: "Рыбалка" },
     { src: "img/качели.jpg", alt: "Качели" },
-    { src: "img/мангал.jpg", alt: "Мангал" },
+    { src: "img/качели и мангал.jpg", alt: "Мангал" },
+    { src: "img/катамаран.jpg", alt: "Катамаран" },
+    { src: "img/беседка.jpg", alt: "Беседка" },
+    { src: "img/валентин.jpg", alt: "Валентин" },
+    { src: "img/озеро1.jpg", alt: "Озеро" },
+    { src: "img/цветы.jpg", alt: "Цветы" },
+    { src: "img/вход.jpg", alt: "Заход" },
+    { src: "img/берег.jpg", alt: "Берег" }
 
     // Добавьте свои фотографии по аналогии
     // { src: "images/my-photo.jpg", alt: "Мое описание" },
