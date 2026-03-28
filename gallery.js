@@ -2,6 +2,7 @@
 const photos = [
     { src: "img/изображение_viber_2021-09-01_21-15-57-921.jpg", alt: "Вид на домик снаружи" },
     { src: "img/8.jpg", alt: "Уютная комната внутри" },
+    { src: "img/кухня1.jpg", alt: "Кухня" },
     { src: "img/озеро.jpg", alt: "Озеро" },
     { src: "img/0-02-05-e9acca5a0eb7d694efff26c54851e37168b9b462a26f66f95ffcd5feba1b4723_c391b7f19d0bfd17.jpg", alt: "Озеро Укля рядом с усадьбой" },
     { src: "img/осень.jpeg", alt: "Лесные тропы" },
